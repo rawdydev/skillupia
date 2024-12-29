@@ -1,19 +1,19 @@
-import React from 'react'
+import Navbar from './components/Navbar'
+import Hero from './components/Hero'
+import HomeCards from './components/HomeCards'
+import JobListings from './components/JobListings'
+import ViewAllJobs from './components/ViewAllJobs'
 
 const App = () => {
-  const name = "Rawdy"
-  const age = 10
-  const job = "Open to work"
-  
-
   return (
-    <div className='h-screen bg-black text-white'>
-    <div className=''>User status</div>
-    <div>Name: {name}</div>
-    <div>Age: {age + 9}</div>
-    <div>Job descreption: {job}</div>
-    </div>
-  ) 
+    <>
+    <Navbar Current=''/>
+    <Hero />
+    <HomeCards />
+    <JobListings />
+    <ViewAllJobs />
+    </>
+  )
 }
 
 export default App
