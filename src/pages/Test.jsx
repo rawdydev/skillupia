@@ -1,6 +1,6 @@
-import Navbar from "./Navbar"
+import Navbar from "../components/Navbar"
 
-const TestingComp = () => {
+const Test = () => {
   const name = "Rawdy"
 const age = 10
 const job = "Open to work"
@@ -20,7 +20,6 @@ const loged = false
 
 return (
   <>
-  <Navbar />
   <div className='h-screen bg-black text-white pl-48 pt-48'>
   <div style={styles}>
       {loged ? <p>Welcom {name}</p> : ""}
@@ -46,4 +45,4 @@ return (
 ) 
 }
 
-export default TestingComp
+export default Test
