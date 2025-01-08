@@ -5,15 +5,16 @@ import { Link } from 'react-router-dom';
 const JobListing = ({job}) => {
   const [showFullDescription, setShowFullDescription] = useState(false);
   
-  let description = job.description
-
   if (!job) {
     return <div>No job data was available</div>
   }
-
-  if (!showFullDescription) {
+  
+  // Safely access job.description
+  let description = job.description || "No job description available."
+  
+  if (!showFullDescription && description.length > 190) {
     description = description.substring(0, 190) + "...";
-  } 
+  }
 
   return (
     <div className="bg-white rounded-xl shadow-md relative">

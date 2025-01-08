@@ -17,10 +17,7 @@ const JobListings = ({isHome = false}) => {
       } catch (error) {
         console.log("Failed to fetch the data error:", error)
       } finally {
-        setTimeout(() => {
-          setLoading(false)  
-        }, 1000);
-        
+        setLoading(false)  
       }
     }
 
