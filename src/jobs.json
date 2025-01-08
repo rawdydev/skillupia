@@ -85,20 +85,6 @@
       }
     },
     {
-      "id": "4f5e",
-      "title": "ttur",
-      "type": "Internship",
-      "location": "Tehran, Tehran, Iran",
-      "description": "etruertu",
-      "salary": "Under $50K",
-      "company": {
-        "name": "rtydery",
-        "description": "etry",
-        "contactEmail": "wery@gamil.com",
-        "contactPhone": "erty"
-      }
-    },
-    {
       "id": "ac33",
       "title": "panjare studio is hiring a front-end intern",
       "type": "Internship",
@@ -110,20 +96,6 @@
         "description": "panjare studio is a web development agency.",
         "contactEmail": "contact@panjare.com",
         "contactPhone": "021-443-213-43"
-      }
-    },
-    {
-      "id": "cb6f",
-      "title": "asd",
-      "type": "Full-Time",
-      "location": "ag",
-      "description": "adsg",
-      "salary": "$50K - 60K",
-      "company": {
-        "name": "adg",
-        "description": "adgs",
-        "contactEmail": "wery@gamil.com",
-        "contactPhone": "asdgadsg"
       }
     }
   ]
