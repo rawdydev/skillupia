@@ -9,11 +9,12 @@ const JobListings = ({isHome = false}) => {
 
   useEffect(() => {
     const fetchJobs = async () => {
-      const apiUrls = isHome ? "/api/Jobs?_limit=3" : "/api/Jobs";
+      const apiUrls = isHome ? "/api/jobs?_limit=3" : "/api/jobs";
       try {
         const res = await fetch(apiUrls)
         const data = await res.json();
-        setJobs(data)
+        const filteredData = isHome ? data.slice(0, 3) : data;
+        setJobs(filteredData)
       } catch (error) {
         console.log("Failed to fetch the data error:", error)
       } finally {
