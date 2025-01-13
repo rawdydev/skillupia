@@ -9,9 +9,9 @@ const JobListings = ({isHome = false}) => {
 
   useEffect(() => {
     const fetchJobs = async () => {
-      const apiUrls = isHome ? "/api/jobs?_limit=3" : "/api/jobs";
+      // const apiUrls = isHome ? "/api/jobs?_limit=3" : "/api/jobs";
       try {
-        const res = await fetch(apiUrls)
+        const res = await fetch("/api/jobs")
         const data = await res.json();
         const filteredData = isHome ? data.slice(0, 3) : data;
         setJobs(filteredData)
