@@ -11,7 +11,7 @@ const JobListings = ({isHome = false}) => {
     const fetchJobs = async () => {
       // const apiUrls = isHome ? "/api/jobs?_limit=3" : "/api/jobs";
       try {
-        const res = await fetch("/api/jobs")
+        const res = await fetch("https://rawdy-apis.vercel.app/jobs")
         const data = await res.json();
         const filteredData = isHome ? data.slice(0, 3) : data;
         setJobs(filteredData)
