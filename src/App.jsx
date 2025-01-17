@@ -15,7 +15,7 @@ import JobPage, {JobLoader} from './pages/JobPage'
 const App = () => { 
   // Adds a new job
   const addJob = async (newJob) => {
-    const res = await fetch('/api/Jobs/', {
+    const res = await fetch('https://rawdy-apis.vercel.app/jobs/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -28,14 +28,14 @@ const App = () => {
 
   // Delets a job
   const deleteJob = async (id) => {
-    const res = await fetch(`/api/Jobs/${id}`, {
+    const res = await fetch(`https://rawdy-apis.vercel.app/jobs/${id}`, {
       method: 'DELETE',
     });
     
   }
 
   const updateJob = async (job) => {
-    const res = await fetch(`/api/Jobs/${job.id}`, {
+    const res = await fetch(`https://rawdy-apis.vercel.app/jobs/${job.id}`, {
       method: "PUT",
       headers: {
         'Content-Type': 'application/json',

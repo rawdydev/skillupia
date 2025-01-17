@@ -9,7 +9,7 @@ const JobListings = ({isHome = false}) => {
 
   useEffect(() => {
     const fetchJobs = async () => {
-      // const apiUrls = isHome ? "/api/jobs?_limit=3" : "/api/jobs";
+      // const apiUrls = isHome ? "https://rawdy-apis.vercel.app/jobs?_limit=3" : "https://rawdy-apis.vercel.app/jobs";
       try {
         const res = await fetch("https://rawdy-apis.vercel.app/jobs")
         const data = await res.json();

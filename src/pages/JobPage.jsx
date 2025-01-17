@@ -112,7 +112,7 @@ const JobPage = ({deleteJob}) => {
 }
 
 const JobLoader = async ({ params }) => {
-  const res = await fetch(`/api/Jobs/${params.id}`);
+  const res = await fetch(`https://rawdy-apis.vercel.app/jobs/${params.id}`);
   const data = await res.json();
   return data
 }
