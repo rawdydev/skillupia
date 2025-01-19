@@ -1,5 +1,5 @@
 {
   "rewrites": [
-    { "source": "/jobs", "destination": "https://rawdy-apis.vercel.app/jobs" }
+    { "source": "/jobs", "destination": "https://rawdy-apis.vercel.app/jobs/" }
   ]
 }
