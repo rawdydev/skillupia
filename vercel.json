@@ -1,9 +1,5 @@
 {
-  "redirects": [
-    {
-      "source": "/jobs",
-      "destination": "https://rawdy-apis.vercel.app/jobs",
-      "permanent": true
-    }
+  "rewrites": [
+    { "source": "/jobs", "destination": "https://rawdy-apis.vercel.app/jobs" }
   ]
 }
